@@ -1227,5 +1227,21 @@
     });
   });
 
+  document.querySelectorAll("[data-card-href]").forEach((card) => {
+    const href = card.getAttribute("data-card-href");
+    if (!href) return;
+
+    card.addEventListener("click", (event) => {
+      if (event.target.closest("a, button, input, select, textarea")) return;
+      window.location.href = href;
+    });
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      window.location.href = href;
+    });
+  });
+
   applyLanguage(initialLanguage());
 })();
