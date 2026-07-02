@@ -856,6 +856,43 @@ h3 {
   border-radius: var(--radius);
 }
 
+.license-slot {
+  align-content: center;
+  gap: 12px;
+  padding: 24px;
+  border-style: solid;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(var(--theme-secondary-rgb), 0.24)),
+    repeating-linear-gradient(135deg, rgba(var(--theme-primary-rgb), 0.1) 0 10px, transparent 10px 20px);
+  color: var(--theme-deep);
+  text-align: left;
+  text-shadow: none;
+}
+
+.license-slot span {
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(var(--theme-primary-rgb), 0.12);
+  color: var(--theme-deep);
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.license-slot strong {
+  color: var(--ink);
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  line-height: 1.08;
+}
+
+.license-slot small {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
 .cta-band {
   padding: 54px;
   border-radius: var(--radius);
@@ -1355,6 +1392,13 @@ body.trip-page .map-visual {
     radial-gradient(circle at 32% 54%, rgba(255, 255, 255, 0.48), transparent 36%),
     repeating-linear-gradient(90deg, rgba(255,255,255,0.28) 0 1px, transparent 1px 24px),
     linear-gradient(135deg, var(--theme-hero-start), var(--theme-hero-mid) 62%, var(--theme-hero-end));
+}
+
+body.trip-page .license-slot {
+  border-color: rgba(var(--theme-primary-rgb), 0.32);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(var(--theme-secondary-rgb), 0.2)),
+    repeating-linear-gradient(135deg, rgba(var(--theme-primary-rgb), 0.08) 0 10px, transparent 10px 20px);
 }
 
 body.trip-page .day-number {
