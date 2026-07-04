@@ -771,7 +771,7 @@ h3 {
   place-items: center;
   min-height: 330px;
   overflow: hidden;
-  border: 1px dashed rgba(22, 155, 215, 0.36);
+  border: 1px solid rgba(22, 155, 215, 0.28);
   background:
     radial-gradient(circle at 72% 20%, rgba(255, 126, 177, 0.24), transparent 30%),
     radial-gradient(circle at 38% 68%, rgba(255, 255, 255, 0.48), transparent 34%),

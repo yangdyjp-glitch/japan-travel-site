@@ -1,19 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f7ff"/><stop offset="1" stop-color="#bfe8ff"/></linearGradient></defs>
-<rect width="1600" height="1000" fill="url(#bg)"/>
-<text x="80" y="90" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#136b8c">Japan Atelier Trips · Route Map</text>
-<text x="80" y="145" font-family="Arial, sans-serif" font-size="28" fill="#306a7a">请由设计师替换为正式日本地图：东京、长野、飞驒、金泽、京都、大阪、出云、松江、冈山、直岛、丰岛、日光、箱根、河口湖。</text>
-<g font-family="Arial, sans-serif" font-size="25" fill="#1b4054">
-<circle cx="1090" cy="325" r="16" fill="#00a7c8"/><text x="1120" y="333">东京 Tokyo</text>
-<circle cx="880" cy="280" r="16" fill="#00a7c8"/><text x="910" y="288">长野 / 白马 Nagano / Hakuba</text>
-<circle cx="720" cy="430" r="16" fill="#16a085"/><text x="750" y="438">飞驒高山 / 金泽 Hida / Kanazawa</text>
-<circle cx="820" cy="555" r="16" fill="#16a085"/><text x="850" y="563">京都 / 大阪 Kyoto / Osaka</text>
-<circle cx="560" cy="610" r="16" fill="#2874a6"/><text x="590" y="618">出云 / 松江 Izumo / Matsue</text>
-<circle cx="690" cy="665" r="16" fill="#2874a6"/><text x="720" y="673">冈山 / 直岛 / 丰岛 Setouchi Art Islands</text>
-<circle cx="1025" cy="445" r="16" fill="#f39c12"/><text x="1055" y="453">河口湖 / 箱根 Fuji / Hakone</text>
-</g>
-<path d="M1090 325 C980 300, 930 290, 880 280" stroke="#00a7c8" stroke-width="8" fill="none" opacity="0.75"/>
-<path d="M1090 325 C1000 390, 890 510, 820 555" stroke="#16a085" stroke-width="8" fill="none" opacity="0.75"/>
-<path d="M820 555 C725 575, 640 610, 560 610 C610 640,650 650,690 665" stroke="#2874a6" stroke-width="8" fill="none" opacity="0.75"/>
-<path d="M1090 325 C1050 365,1040 400,1025 445" stroke="#f39c12" stroke-width="8" fill="none" opacity="0.75"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Japan Atelier Trips Route Map</title>
+  <desc id="desc">A stylized Japan route map showing five themed travel routes across Tokyo, Nagano, Hida, Kanazawa, Kyoto, Osaka, Izumo, Matsue, Setouchi, Nikko, Hakone, and Kawaguchiko.</desc>
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf8ff"/>
+      <stop offset="0.55" stop-color="#c7edff"/>
+      <stop offset="1" stop-color="#93d9ff"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dff5ff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#2b88bd" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M 56 0 L 0 0 0 56" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.42"/>
+    </pattern>
+    <style>
+      .label { font-family: Inter, Manrope, Arial, sans-serif; font-size: 25px; font-weight: 800; fill: #153756; }
+      .sub { font-family: Inter, Manrope, Arial, sans-serif; font-size: 18px; font-weight: 700; fill: #56799a; }
+      .legend { font-family: Inter, Manrope, Arial, sans-serif; font-size: 18px; font-weight: 800; fill: #153756; }
+      .route { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 10; }
+      .halo { fill: #ffffff; stroke-width: 5; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" rx="34" fill="url(#sea)"/>
+  <rect width="1600" height="1000" fill="url(#grid)" opacity="0.55"/>
+  <circle cx="1310" cy="150" r="210" fill="#ffffff" opacity="0.28"/>
+  <circle cx="240" cy="810" r="260" fill="#7bd5ff" opacity="0.18"/>
+
+  <g transform="translate(84 80)">
+    <text x="0" y="0" font-family="Inter, Manrope, Arial, sans-serif" font-size="42" font-weight="900" fill="#0b6e9e">Japan Atelier Trips</text>
+    <text x="0" y="40" font-family="Inter, Manrope, Arial, sans-serif" font-size="24" font-weight="800" fill="#557a9a">Five themed routes across central Japan, snow country, pop culture districts, art islands, and seasonal Tokyo.</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <path d="M1145 247 C1190 225 1242 238 1267 276 C1296 321 1258 364 1213 361 C1179 359 1158 335 1134 313 C1104 284 1113 262 1145 247 Z" fill="url(#land)" stroke="#8bc7df" stroke-width="3"/>
+    <path d="M1014 322 C1057 326 1088 350 1115 386 C1151 435 1179 489 1241 514 C1274 527 1277 561 1249 581 C1217 604 1171 579 1141 559 C1084 522 1048 458 999 418 C958 385 950 341 1014 322 Z" fill="url(#land)" stroke="#8bc7df" stroke-width="3"/>
+    <path d="M906 363 C970 392 1029 454 1056 522 C1076 572 1024 619 964 612 C894 604 840 574 778 568 C711 562 650 590 590 625 C532 659 473 635 480 592 C486 558 537 543 583 522 C643 494 680 448 735 408 C795 363 849 337 906 363 Z" fill="url(#land)" stroke="#8bc7df" stroke-width="3"/>
+    <path d="M664 637 C723 621 793 640 831 680 C859 709 836 742 787 738 C730 734 675 716 630 696 C592 680 601 652 664 637 Z" fill="url(#land)" stroke="#8bc7df" stroke-width="3"/>
+    <path d="M414 681 C472 657 551 674 590 716 C620 749 586 785 529 782 C472 779 421 758 386 732 C360 713 374 695 414 681 Z" fill="url(#land)" stroke="#8bc7df" stroke-width="3"/>
+  </g>
+
+  <g opacity="0.14">
+    <path d="M460 670 C594 589 707 572 834 604 C914 624 1009 623 1098 571" fill="none" stroke="#0c5f9f" stroke-width="42" stroke-linecap="round"/>
+    <path d="M837 600 C885 548 951 470 1073 410" fill="none" stroke="#0c5f9f" stroke-width="30" stroke-linecap="round"/>
+  </g>
+
+  <g id="routes">
+    <path class="route" d="M1098 410 C1001 444 892 495 766 532 C710 549 682 594 672 625" stroke="#25a878"/>
+    <path class="route" d="M1098 410 C1032 363 965 350 902 370" stroke="#15a8df"/>
+    <path class="route" d="M1098 410 C1028 494 912 583 748 642" stroke="#7f55ff"/>
+    <path class="route" d="M1098 410 C972 522 812 590 628 637 C559 655 506 682 459 711" stroke="#2d7fb4"/>
+    <path class="route" d="M1098 410 C1148 385 1162 354 1169 318 M1098 410 C1119 455 1090 505 1044 533" stroke="#f06b2f"/>
+  </g>
+
+  <g id="nodes">
+    <circle class="halo" cx="1098" cy="410" r="18" stroke="#0b6e9e"/><circle cx="1098" cy="410" r="9" fill="#0b6e9e"/>
+    <circle class="halo" cx="902" cy="370" r="18" stroke="#15a8df"/><circle cx="902" cy="370" r="9" fill="#15a8df"/>
+    <circle class="halo" cx="766" cy="532" r="18" stroke="#25a878"/><circle cx="766" cy="532" r="9" fill="#25a878"/>
+    <circle class="halo" cx="672" cy="625" r="18" stroke="#25a878"/><circle cx="672" cy="625" r="9" fill="#25a878"/>
+    <circle class="halo" cx="748" cy="642" r="18" stroke="#7f55ff"/><circle cx="748" cy="642" r="9" fill="#7f55ff"/>
+    <circle class="halo" cx="459" cy="711" r="18" stroke="#2d7fb4"/><circle cx="459" cy="711" r="9" fill="#2d7fb4"/>
+    <circle class="halo" cx="628" cy="637" r="18" stroke="#2d7fb4"/><circle cx="628" cy="637" r="9" fill="#2d7fb4"/>
+    <circle class="halo" cx="1169" cy="318" r="18" stroke="#f06b2f"/><circle cx="1169" cy="318" r="9" fill="#f06b2f"/>
+    <circle class="halo" cx="1044" cy="533" r="18" stroke="#f06b2f"/><circle cx="1044" cy="533" r="9" fill="#f06b2f"/>
+  </g>
+
+  <g id="labels">
+    <text class="label" x="1128" y="400">Tokyo</text>
+    <text class="sub" x="1128" y="426">arrival hub</text>
+
+    <text class="label" x="748" y="352">Nagano / Hakuba</text>
+    <text class="sub" x="748" y="377">snow country</text>
+
+    <text class="label" x="522" y="520">Hida / Kanazawa</text>
+    <text class="sub" x="522" y="545">craft towns</text>
+
+    <text class="label" x="690" y="705">Kyoto / Osaka</text>
+    <text class="sub" x="690" y="730">culture + city finish</text>
+
+    <text class="label" x="236" y="709">Izumo / Matsue</text>
+    <text class="sub" x="236" y="734">mythology</text>
+
+    <text class="label" x="620" y="610">Setouchi Art Islands</text>
+    <text class="sub" x="620" y="635">Okayama, Naoshima, Teshima</text>
+
+    <text class="label" x="1197" y="320">Nikko</text>
+    <text class="sub" x="1197" y="345">heritage + autumn</text>
+
+    <text class="label" x="1070" y="548">Fuji / Hakone</text>
+    <text class="sub" x="1070" y="573">Kawaguchiko leaves</text>
+  </g>
+
+  <g transform="translate(1065 690)">
+    <rect x="0" y="0" width="455" height="210" rx="22" fill="#ffffff" opacity="0.86" stroke="#b7ddf0"/>
+    <text x="28" y="42" font-family="Inter, Manrope, Arial, sans-serif" font-size="24" font-weight="900" fill="#153756">Route Themes</text>
+    <g transform="translate(28 72)">
+      <line x1="0" y1="0" x2="42" y2="0" stroke="#25a878" stroke-width="8" stroke-linecap="round"/><text class="legend" x="58" y="7">Craft &amp; Culture Japan</text>
+      <line x1="0" y1="30" x2="42" y2="30" stroke="#15a8df" stroke-width="8" stroke-linecap="round"/><text class="legend" x="58" y="37">Powder Snow &amp; Snow Monkeys</text>
+      <line x1="0" y1="60" x2="42" y2="60" stroke="#7f55ff" stroke-width="8" stroke-linecap="round"/><text class="legend" x="58" y="67">Anime Kingdom Japan</text>
+      <line x1="0" y1="90" x2="42" y2="90" stroke="#2d7fb4" stroke-width="8" stroke-linecap="round"/><text class="legend" x="58" y="97">Sanin &amp; Setouchi Art</text>
+      <line x1="0" y1="120" x2="42" y2="120" stroke="#f06b2f" stroke-width="8" stroke-linecap="round"/><text class="legend" x="58" y="127">Tokyo Halloween &amp; Autumn Leaves</text>
+    </g>
+  </g>
 </svg>
