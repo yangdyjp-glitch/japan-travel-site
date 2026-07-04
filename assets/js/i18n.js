@@ -87,7 +87,7 @@
       "trip.art.lead": "An 11-day route connecting ancient Japan, regional culture, garden aesthetics, contemporary art, architecture, and the Setouchi island experience.",
       "trip.art.note": "11 days · Spring/fall best · Mythology, gardens, and art islands",
       "trip.halloween.title": "Tokyo Halloween & Autumn Leaves",
-      "trip.halloween.titleHtml": "<span class=\"hero-title-line\">Tokyo Halloween &</span><span class=\"hero-title-line\">Autumn Leaves</span>",
+      "trip.halloween.titleHtml": "<span class=\"hero-title-line hero-title-join\">Tokyo Halloween&nbsp;&amp;</span><span class=\"hero-title-line\">Autumn Leaves</span>",
       "trip.halloween.jp": "東京ハロウィンと紅葉",
       "trip.halloween.eyebrow": "Halloween · Cosplay · Autumn leaves",
       "trip.halloween.lead": "A late-October Japan route that pairs Tokyo youth culture, Disney Halloween, cosplay-friendly activities, digital art, Fuji views, hot springs, and early autumn color.",

@@ -1462,8 +1462,21 @@ body.trip-page .hero-title-line {
   max-width: 760px;
 }
 
+.hero-title-join {
+  white-space: nowrap;
+}
+
 html[lang="en"] body.trip-page .hero-title-line {
   max-width: 720px;
+}
+
+html[lang="en"] body.theme-halloween h1 {
+  max-width: 900px;
+  font-size: clamp(2.35rem, 4.35vw, 3.9rem);
+}
+
+html[lang="en"] body.theme-halloween .hero-title-line {
+  max-width: 900px;
 }
 
 @media (max-width: 620px) {
@@ -1474,6 +1487,10 @@ html[lang="en"] body.trip-page .hero-title-line {
   body.trip-page h1 {
     font-size: clamp(2.4rem, 11vw, 3.45rem);
     line-height: 1.06;
+  }
+
+  html[lang="en"] body.theme-halloween h1 {
+    font-size: clamp(2rem, 9vw, 2.95rem);
   }
 }
 
