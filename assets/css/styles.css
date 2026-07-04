@@ -286,11 +286,16 @@ input[type="submit"] {
 }
 
 .hero.has-image {
-  background:
-    linear-gradient(90deg, rgba(7, 38, 74, 0.78), rgba(16, 124, 190, 0.42) 54%, rgba(9, 63, 115, 0.58)),
-    var(--hero-image);
-  background-position: center, var(--hero-position, center);
-  background-size: cover, cover;
+  background: #1f96dd;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero::before {
@@ -326,6 +331,21 @@ input[type="submit"] {
 
 .hero.has-image::after {
   content: "";
+}
+
+.hero.has-image::before {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(7, 38, 74, 0.82), rgba(16, 124, 190, 0.34) 54%, rgba(9, 63, 115, 0.52)),
+    linear-gradient(to top, rgba(19, 105, 171, 0.42) 0 7%, transparent 7%),
+    linear-gradient(to top, rgba(9, 78, 144, 0.34) 0 12%, transparent 12%),
+    linear-gradient(to top, rgba(255, 255, 255, 0.22) 0 17%, transparent 17%),
+    linear-gradient(to right, transparent 0 6%, rgba(255, 255, 255, 0.2) 6% 6.35%, transparent 6.35% 13%, rgba(215, 238, 47, 0.16) 13% 13.35%, transparent 13.35% 21%, rgba(255, 255, 255, 0.18) 21% 21.35%, transparent 21.35% 33%, rgba(255, 107, 154, 0.12) 33% 33.35%, transparent 33.35% 48%, rgba(255, 255, 255, 0.16) 48% 48.35%, transparent 48.35% 62%, rgba(215, 238, 47, 0.14) 62% 62.35%, transparent 62.35% 78%, rgba(255, 255, 255, 0.16) 78% 78.35%, transparent 78.35% 100%);
+  opacity: 1;
+}
+
+.hero.has-image .hero-inner {
+  z-index: 2;
 }
 
 .hero-inner {
