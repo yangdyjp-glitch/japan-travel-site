@@ -364,7 +364,7 @@ input[type="submit"] {
   align-items: center;
   gap: 8px;
   margin: 0 0 18px;
-  color: var(--gold);
+  color: var(--teal-deep);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -376,6 +376,11 @@ input[type="submit"] {
   width: 34px;
   height: 2px;
   background: currentColor;
+}
+
+.hero .eyebrow,
+.cta-band .eyebrow {
+  color: var(--gold);
 }
 
 h1,
