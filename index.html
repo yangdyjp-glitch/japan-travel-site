@@ -323,28 +323,34 @@
             <p data-i18n="home.contact.lead">Tell us your preferred month, group size, age range, and interests—we’ll recommend the Japan trip that fits best.</p>
             <a class="button secondary" href="#contact" data-i18n="nav.requestInfo">Request Info</a>
           </div>
-          <form class="panel">
+          <form class="panel inquiry-form" id="inquiry-form" data-inquiry-form aria-describedby="inquiry-privacy inquiry-status">
             <div class="form-grid">
-              <label>Name
-                <input type="text" name="name">
+              <label><span data-i18n="form.name">Name</span>
+                <input type="text" name="name" autocomplete="name" maxlength="120" required>
               </label>
-              <label>Email
-                <input type="email" name="email">
+              <label><span data-i18n="form.email">Email</span>
+                <input type="email" name="email" autocomplete="email" maxlength="200" required>
               </label>
-              <label>Interested route
-                <select name="route">
-                  <option>Craft & Culture Japan</option>
-                  <option>Powder Snow & Snow Monkeys</option>
-                  <option>Anime Kingdom Japan</option>
-                  <option>Mythic Sanin & Setouchi Art</option>
-                  <option>Tokyo Halloween & Autumn Leaves</option>
+              <label><span data-i18n="form.route">Interested trip</span>
+                <select name="route" required>
+                  <option value="" disabled selected data-i18n="form.routePlaceholder">Choose a trip</option>
+                  <option value="craft-culture">Craft & Culture Japan</option>
+                  <option value="powder-snow">Powder Snow & Snow Monkeys</option>
+                  <option value="anime-kingdom">Anime Kingdom Japan</option>
+                  <option value="sanin-setouchi-art">Mythic Sanin & Setouchi Art</option>
+                  <option value="tokyo-halloween">Tokyo Halloween & Autumn Leaves</option>
                 </select>
               </label>
-              <label class="full">Message
-                <textarea name="message"></textarea>
+              <label class="full"><span data-i18n="form.message">Message</span>
+                <textarea name="message" maxlength="2000" required></textarea>
+              </label>
+              <label class="form-honeypot" aria-hidden="true">Website
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
               </label>
               <div class="full">
-                <input type="submit" value="Request Info">
+                <button class="button primary" type="submit" data-i18n="form.submit">Request Info</button>
+                <p class="form-note" id="inquiry-privacy" data-i18n="form.notice">Your details will be used only to respond to this trip inquiry.</p>
+                <p class="form-status" id="inquiry-status" role="status" aria-live="polite"></p>
               </div>
             </div>
           </form>
@@ -377,5 +383,6 @@
       </div>
     </footer>
     <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/inquiry-form.js"></script>
   </body>
 </html>
