@@ -1303,12 +1303,12 @@ form[aria-busy="true"] input[type="submit"] {
     opacity: 1;
     mix-blend-mode: normal;
     background:
-      linear-gradient(90deg, rgba(var(--theme-deep-rgb), 0.92) 0%, rgba(var(--theme-deep-rgb), 0.72) 43%, rgba(var(--theme-deep-rgb), 0.3) 70%, rgba(var(--theme-deep-rgb), 0.14) 100%),
-      linear-gradient(180deg, rgba(var(--theme-deep-rgb), 0.08), rgba(var(--theme-deep-rgb), 0.3));
+      linear-gradient(90deg, rgba(4, 14, 24, 0.68) 0%, rgba(4, 14, 24, 0.46) 42%, rgba(4, 14, 24, 0.18) 70%, rgba(4, 14, 24, 0.06) 100%),
+      linear-gradient(180deg, rgba(4, 14, 24, 0.02) 42%, rgba(4, 14, 24, 0.24) 100%);
   }
 
   body.trip-page .hero-copy {
-    text-shadow: 0 3px 20px rgba(var(--theme-deep-rgb), 0.66);
+    text-shadow: 0 3px 20px rgba(2, 10, 18, 0.72);
   }
 
   body.trip-page .hero-copy .poster-stat,
